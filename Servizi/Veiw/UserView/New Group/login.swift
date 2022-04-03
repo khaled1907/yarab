@@ -31,7 +31,7 @@ struct login: View {
            .foregroundColor(.gray)
                 TextField("servizi22@yahoo.com", text:$email)
                     .font(.system(size: 20, weight: .semibold))
-                  //  .foregroundColor(Color(.black))
+           
                     .padding(.top,5)
                 
                 

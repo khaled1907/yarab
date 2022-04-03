@@ -13,8 +13,9 @@ struct ServiziApp: App {
     var body: some Scene {
         
         WindowGroup {
-       //   testingVeiw()
-   FirstPageInApp()
+  FirstPageInApp()
+        //    TechnicainHomeView()
+            
         }
     }
 }

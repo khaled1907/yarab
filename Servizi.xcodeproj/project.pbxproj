@@ -10,26 +10,36 @@
 		290F6F3B27CFBE6F00711AB8 /* testingVeiw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290F6F3A27CFBE6F00711AB8 /* testingVeiw.swift */; };
 		292B001B27CD94D4000DC6C8 /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B001A27CD94D4000DC6C8 /* login.swift */; };
 		292B001D27CD94EE000DC6C8 /* signUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B001C27CD94EE000DC6C8 /* signUp.swift */; };
+		2953459727EE2A9A00303888 /* dataPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2953459627EE2A9A00303888 /* dataPicker.swift */; };
+		2988F07827E9091100C92FB1 /* TechnicianSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2988F07727E9091100C92FB1 /* TechnicianSignUp.swift */; };
+		2988F07A27E9111100C92FB1 /* TechnicainLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2988F07927E9111100C92FB1 /* TechnicainLogin.swift */; };
+		2988F07C27E911B200C92FB1 /* TestingViewForTechnician.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2988F07B27E911B200C92FB1 /* TestingViewForTechnician.swift */; };
+		2988F07E27EA347500C92FB1 /* UserSignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2988F07D27EA347400C92FB1 /* UserSignUpViewModel.swift */; };
+		2988F08027EA701C00C92FB1 /* TechnicianSignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2988F07F27EA701C00C92FB1 /* TechnicianSignUpModel.swift */; };
+		2990107327EBB28200DAB8C2 /* TechnicainHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2990107227EBB28100DAB8C2 /* TechnicainHomeView.swift */; };
 		29A814C927CD30FC00701405 /* ServiziApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A814C827CD30FB00701405 /* ServiziApp.swift */; };
 		29A814CD27CD312B00701405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29A814CC27CD312B00701405 /* Assets.xcassets */; };
 		29A814D027CD312B00701405 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29A814CF27CD312B00701405 /* Preview Assets.xcassets */; };
 		29A814DC27CD34B700701405 /* FirstPageInApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A814DB27CD34B700701405 /* FirstPageInApp.swift */; };
-		29A814E027CD4CBF00701405 /*  home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A814DF27CD4CBF00701405 /*  home.swift */; };
-		29C48E9327D4F53E00E75D87 /* UserSignUpInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C48E9227D4F53E00E75D87 /* UserSignUpInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		290F6F3A27CFBE6F00711AB8 /* testingVeiw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testingVeiw.swift; sourceTree = "<group>"; };
 		292B001A27CD94D4000DC6C8 /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
 		292B001C27CD94EE000DC6C8 /* signUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUp.swift; sourceTree = "<group>"; };
+		2953459627EE2A9A00303888 /* dataPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataPicker.swift; sourceTree = "<group>"; };
+		2988F07727E9091100C92FB1 /* TechnicianSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicianSignUp.swift; sourceTree = "<group>"; };
+		2988F07927E9111100C92FB1 /* TechnicainLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicainLogin.swift; sourceTree = "<group>"; };
+		2988F07B27E911B200C92FB1 /* TestingViewForTechnician.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingViewForTechnician.swift; sourceTree = "<group>"; };
+		2988F07D27EA347400C92FB1 /* UserSignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignUpViewModel.swift; sourceTree = "<group>"; };
+		2988F07F27EA701C00C92FB1 /* TechnicianSignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicianSignUpModel.swift; sourceTree = "<group>"; };
+		2990107227EBB28100DAB8C2 /* TechnicainHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicainHomeView.swift; sourceTree = "<group>"; };
 		29A814C527CD30FA00701405 /* Servizi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Servizi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A814C827CD30FB00701405 /* ServiziApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiziApp.swift; sourceTree = "<group>"; };
 		29A814CC27CD312B00701405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29A814CF27CD312B00701405 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		29A814D127CD312B00701405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29A814DB27CD34B700701405 /* FirstPageInApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageInApp.swift; sourceTree = "<group>"; };
-		29A814DF27CD4CBF00701405 /*  home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " home.swift"; sourceTree = "<group>"; };
-		29C48E9227D4F53E00E75D87 /* UserSignUpInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignUpInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,8 +57,32 @@
 			isa = PBXGroup;
 			children = (
 				290F6F3A27CFBE6F00711AB8 /* testingVeiw.swift */,
+				292B001C27CD94EE000DC6C8 /* signUp.swift */,
+				292B001A27CD94D4000DC6C8 /* login.swift */,
 			);
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		2988F03D27E8AA6700C92FB1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				29A814DB27CD34B700701405 /* FirstPageInApp.swift */,
+				2988F07D27EA347400C92FB1 /* UserSignUpViewModel.swift */,
+				2988F07F27EA701C00C92FB1 /* TechnicianSignUpModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2988F07627E9089A00C92FB1 /* TecnhnicianView */ = {
+			isa = PBXGroup;
+			children = (
+				2988F07727E9091100C92FB1 /* TechnicianSignUp.swift */,
+				2988F07927E9111100C92FB1 /* TechnicainLogin.swift */,
+				2988F07B27E911B200C92FB1 /* TestingViewForTechnician.swift */,
+				2990107227EBB28100DAB8C2 /* TechnicainHomeView.swift */,
+				2953459627EE2A9A00303888 /* dataPicker.swift */,
+			);
+			path = TecnhnicianView;
 			sourceTree = "<group>";
 		};
 		29A814BC27CD30F900701405 = {
@@ -70,8 +104,8 @@
 		29A814C727CD30FA00701405 /* Servizi */ = {
 			isa = PBXGroup;
 			children = (
+				2988F03D27E8AA6700C92FB1 /* ViewModel */,
 				29A814C827CD30FB00701405 /* ServiziApp.swift */,
-				29C48E9227D4F53E00E75D87 /* UserSignUpInfo.swift */,
 				29A814D827CD327D00701405 /* Veiw */,
 				29A814CC27CD312B00701405 /* Assets.xcassets */,
 				29A814CF27CD312B00701405 /* Preview Assets.xcassets */,
@@ -91,21 +125,18 @@
 		29A814D827CD327D00701405 /* Veiw */ = {
 			isa = PBXGroup;
 			children = (
-				29A814DB27CD34B700701405 /* FirstPageInApp.swift */,
-				29A814DE27CD4C6400701405 /*  Userview */,
+				2988F07627E9089A00C92FB1 /* TecnhnicianView */,
+				29A814DE27CD4C6400701405 /* UserView */,
 			);
 			path = Veiw;
 			sourceTree = "<group>";
 		};
-		29A814DE27CD4C6400701405 /*  Userview */ = {
+		29A814DE27CD4C6400701405 /* UserView */ = {
 			isa = PBXGroup;
 			children = (
 				290F6F3927CFBE3A00711AB8 /* New Group */,
-				29A814DF27CD4CBF00701405 /*  home.swift */,
-				292B001A27CD94D4000DC6C8 /* login.swift */,
-				292B001C27CD94EE000DC6C8 /* signUp.swift */,
 			);
-			path = " Userview";
+			path = UserView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,13 +208,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2988F07E27EA347500C92FB1 /* UserSignUpViewModel.swift in Sources */,
+				2988F08027EA701C00C92FB1 /* TechnicianSignUpModel.swift in Sources */,
 				292B001D27CD94EE000DC6C8 /* signUp.swift in Sources */,
+				2953459727EE2A9A00303888 /* dataPicker.swift in Sources */,
 				29A814DC27CD34B700701405 /* FirstPageInApp.swift in Sources */,
+				2990107327EBB28200DAB8C2 /* TechnicainHomeView.swift in Sources */,
+				2988F07A27E9111100C92FB1 /* TechnicainLogin.swift in Sources */,
 				29A814C927CD30FC00701405 /* ServiziApp.swift in Sources */,
 				290F6F3B27CFBE6F00711AB8 /* testingVeiw.swift in Sources */,
-				29C48E9327D4F53E00E75D87 /* UserSignUpInfo.swift in Sources */,
-				29A814E027CD4CBF00701405 /*  home.swift in Sources */,
 				292B001B27CD94D4000DC6C8 /* login.swift in Sources */,
+				2988F07827E9091100C92FB1 /* TechnicianSignUp.swift in Sources */,
+				2988F07C27E911B200C92FB1 /* TestingViewForTechnician.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

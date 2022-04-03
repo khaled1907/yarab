@@ -49,7 +49,7 @@ NavigationView{
             
                     
                     
-                    NavigationLink( destination: testingVeiw(),
+                    NavigationLink( destination: TestingViewForTechnician(),
                       isActive: self.$isActive1)
                     {
                       Text("")
