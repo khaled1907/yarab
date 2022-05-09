@@ -8,7 +8,88 @@
 import SwiftUI
 
 struct signUp: View {
-    @StateObject var uvm = UserSignUpViewModel()
+    
+    //         data for choose government and city
+    @State  var isActive1: Bool = false
+    @State var valueforGav = "Suez"
+    @State var valueforCity = "Arbaeen"
+   @State var placeholderforGov = "Suez"
+    @State var placeholderforCity = "Arbaeen"
+    
+    @State var choosenGovIs = ["Arbaeen","Ganayen","Suez","Attaka","Faisal","Port Suez P-D"]
+    
+
+    
+    var govermentList = ["Cairo", "Suez", "Alexandria","Qalyubia","Giza"]
+    var Suez_Cities = ["Arbaeen","Ganayen","Suez","Attaka","Faisal","Port Suez P-D"]
+    var Cairo_Cities = ["15 May City","El Darb El Ahmar","Ain Shams","Amreya","Azbakeya","El Basatin","Maadi","El Marg","El Matareya","El Mokattam","New Cairo 1","New Cairo 2","New Cairo 3","El Weili","El Nozha","El Sahel","El Sharabiya","El Shorouk","El Segil","El Salam","El Sayeda Zeinab","El Tebbin","El Zaher","Zamalek","El Zawya El Hamra","Zeitoun","Bab El Sharia","Bulaq","Dar El Salam","Hada`iq El Qobbah","Helwan","Nasr City 1","Nasr City 2","Badr City","Heliopolis","Old Cairo","Manshiyat Naser","Qasr El Nil","Rod El Farag","Shubra","Tura"]
+    var Alexandria_Cities = [     "Port Alexandria Police Dept",
+                                  "Dekhela",
+                                   "Amreya 1",
+                                   "Amreya 2",
+                                   "Ataren",
+                                   "Gomrok",
+                                  "Labban",
+                                  "Mansheya",
+                                   "Montaza 1",
+                                  "Montaza 2",
+                                   "El Raml 1",
+                                 "El Raml 2",
+                                   "North Coast",
+                                 "Bab Sharqi",
+                                  "Borg El Arab",
+                                   "Karmouz",
+                                  "New Borg El Arab",
+                                   "Port al-Basal",
+                                   "Moharam Bek",
+                                  "Sidi Gaber"]
+    var Qalyubia_Cities = ["El Qanater El Khayreya",
+                           "Khanka",
+                           "Khusus",
+                           "El Ubour",
+                           "Banha",
+                           "Banha 1",
+                           "Banha 2",
+                           "Kafr Shukr",
+                           "Qaha",
+                           "Qalyub",
+                           "Shubra El Kheima 1",
+                           "Shubra El Kheima 2",
+                           "Shibin El Qanater",
+                           "Tukh"]
+    var Giza_Cities = ["Dokki",
+                       "Pyramids",
+                       "Agouza",
+                       "El Ayyat",
+                       "El Badrashein",
+                       "El Hawamdeya",
+                       "Giza",
+                       "El Omraniya",
+                       "El Wahat El Bahariya",
+                       "El Warraq",
+                       "Sheikh Zayed City",
+                       "El Saff",
+                       "Atfeh",
+                       "Talbia",
+                       "Ossim",
+                       "Bulaq",
+                       "Imbaba",
+                       "Imbaba",
+                       "Kerdasa",
+                       "6th of October City (1)",
+                       "6th of October City (2)",
+                       "6th of October City (3)"]
+    //                  End of comment
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    @StateObject var SignVm = UserSignUpViewModel()
     @State  var number1: Bool = true
     @State  var number2: Bool = true
     @State  var number3: Bool = true
@@ -16,11 +97,16 @@ struct signUp: View {
     @State  var number5: Bool = true
     @State  var number6: Bool = true
     var body: some View {
-        
+      
         
   ScrollView {
-
+    NavigationLink( destination: testingVeiw(),
+                    isActive: self.$isActive1)
+    {
+        Text("")
+    }
         VStack{
+          
             Text("Register as a User")
                 .font(.title)
                 .fontWeight(.bold)
@@ -34,7 +120,7 @@ struct signUp: View {
                Text(" First name")
                 .fontWeight(.bold)
                .foregroundColor(.gray)
-                TextField("michel", text:$uvm.firstName)
+                TextField("michel", text:$SignVm.firstName)
                     .font(.system(size: 20, weight: .semibold))
                
                     .padding(.top,5)
@@ -61,7 +147,7 @@ struct signUp: View {
                Text("Last name")
                 .fontWeight(.bold)
                 .foregroundColor(.gray)
-                TextField("david", text:$uvm.lastName)
+                TextField("david", text:$SignVm.lastName)
                     .font(.system(size: 20, weight: .semibold))
                   
                     .padding(.top,5)
@@ -88,7 +174,7 @@ struct signUp: View {
                Text("Email")
                 .fontWeight(.bold)
                 .foregroundColor(.gray)
-                TextField("Servizi@yahoo.com", text:$uvm.email)
+                TextField("Servizi@yahoo.com", text:$SignVm.email)
                     .font(.system(size: 20, weight: .semibold))
                   
                     .padding(.top,5)
@@ -114,7 +200,7 @@ struct signUp: View {
                Text("Phone")
                 .fontWeight(.bold)
                 .foregroundColor(.gray)
-                TextField("0100555001", text:$uvm.phone)
+                TextField("0100555001", text:$SignVm.phone)
                     .font(.system(size: 20, weight: .semibold))
                
                     .padding(.top,5)
@@ -136,32 +222,106 @@ struct signUp: View {
             .padding(.top,5)
             
             VStack (alignment: .leading  , spacing: 8, content: {
-                        
-                        
-               Text("City")
-                .fontWeight(.bold)
-                .foregroundColor(.gray)
-                TextField("Naser city", text:$uvm.city)
-                    .font(.system(size: 20, weight: .semibold))
-                    
-                    .padding(.top,5)
                 
                 
+                Text("Goverment")
+                    .fontWeight(.bold)
+                    .foregroundColor(.gray)
+                
+                
+                VStack{
+                    Menu {
+                        ForEach(govermentList, id: \.self){ client in
+                            Button(client) {
+                                self.valueforGav = client
+                                if(valueforGav == "Cairo"){
+                                    choosenGovIs = Cairo_Cities
+                                    valueforCity = "15 May City"
+                                    placeholderforCity = "15 May City"
+                                }
+                                else if(valueforGav == "Suez"){
+                                    choosenGovIs = Suez_Cities
+                                    valueforCity = "Arbaeen"
+                                    placeholderforCity = "Arbaeen"
+                                }
+                                else if(valueforGav == "Alexandria"){
+                                    choosenGovIs = Alexandria_Cities
+                                    valueforCity = "Port Alexandria Police Dept"
+                                    placeholderforCity = "Port Alexandria Police Dept"
+                                }
+                                else if(valueforGav == "Qalyubia"){
+                                    choosenGovIs = Qalyubia_Cities
+                                    valueforCity = "El Qanater El Khayreya"
+                                    placeholderforCity = "El Qanater El Khayreya"
+                                }
+                                else if  (valueforGav == "Giza"){
+                                    choosenGovIs = Giza_Cities
+                                    valueforCity = "Dokki"
+                                    placeholderforCity = "Dokki"
+                                }
+                                SignVm.governorate = valueforGav
+                            }
+                        }
+                    } label: {
+                        VStack(spacing: 10){
+                            HStack{
+                                Text(valueforGav.isEmpty ? placeholderforGov : valueforGav)
+                                    .foregroundColor(valueforGav.isEmpty ? .gray : .blue)
+                                Spacer()
+                                Image(systemName: "chevron.down")
+                                    .foregroundColor(Color.blue)
+                                    .font(Font.system(size: 20, weight: .bold))
+                                
+                            }
+                        }
+                    }
+                }
+                TextField("\(valueforGav)", text:$SignVm.governorate)
+                //    .disabled(true)
+                    .hidden()
+                    .frame(width: 0, height: 0)
+              
+              
                 Divider()
             })
             .padding(.top,5)
-            
+          
             VStack (alignment: .leading  , spacing: 8, content: {
-                        
-                        
-               Text("Goverment")
-                .fontWeight(.bold)
-                .foregroundColor(.gray)
-                TextField("Cairo", text:$uvm.governorate)
-                    .font(.system(size: 20, weight: .semibold))
-                  
-                    .padding(.top,5)
                 
+                
+                Text("City")
+                    .fontWeight(.bold)
+                    .foregroundColor(.gray)
+                VStack{
+                    
+                    Menu {
+                        ForEach(choosenGovIs, id: \.self){ client in
+                            Button(client) {
+                                self.valueforCity = client
+                 
+                            }
+                        }
+                    } label: {
+                        VStack(spacing: 10){
+                            HStack{
+                                Text(valueforCity.isEmpty ? placeholderforCity : valueforCity)
+                                    .foregroundColor(valueforCity.isEmpty ? .gray : .blue)
+                              /*  Text(tvm.city)
+                                    .foregroundColor(.blue)*/
+                                
+                                Spacer()
+                                Image(systemName: "chevron.down")
+                                    .foregroundColor(Color.blue)
+                                    .font(Font.system(size: 20, weight: .bold))
+                            }
+                        }
+                    }
+                }
+                
+                TextField("\(valueforCity)", text:$SignVm.city)
+                   // .disabled(true)
+                    .hidden()
+                    .frame(width: 0, height: 0)
                 
                 Divider()
             })
@@ -173,7 +333,7 @@ struct signUp: View {
                Text("Password")
                 .fontWeight(.bold)
                 .foregroundColor(.gray)
-                SecureField("sssssssss", text:$uvm.password)
+                SecureField("sssssssss", text:$SignVm.password)
                 .font(.system(size: 20, weight: .semibold))
             
                 .padding(.top,5)
@@ -199,7 +359,7 @@ struct signUp: View {
                Text("Confirm Password")
                 .fontWeight(.bold)
                 .foregroundColor(.gray)
-                SecureField("sssssssss", text:$uvm.confirmpassword)
+                SecureField("sssssssss", text:$SignVm.confirmpassword)
                 .font(.system(size: 20, weight: .semibold))
                 
                 .padding(.top,5)
@@ -224,7 +384,7 @@ struct signUp: View {
             .padding(.top, 10)
             // button for moveing to next step
             Button(action: {
-                Validate(user: uvm)
+                Validate(user: SignVm)
  }, label: {
               Image(systemName: "arrow.right")
                 .font(.system(size: 24, weight:.bold))
@@ -245,6 +405,7 @@ struct signUp: View {
         .padding()
             
   }
+   
     }
     func Validate(user : UserSignUpViewModel) -> Bool
     {
@@ -296,7 +457,7 @@ struct signUp: View {
   
 
         }
-if (user.password != user.confirmpassword) {
+        if (user.password != user.confirmpassword || user.confirmpassword .isEmpty ) {
 number6 = false
 valid = false
 }
@@ -355,13 +516,7 @@ return valid
             return true
             
         }
-         /*   /* - Password length is 8.
-             2 - One Alphabet in Password.
-             3 - One Special Character in Password.
-*/
-             let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
-                return passwordTest.evaluate(with: password)
-        }*/
+
     }
 }
 

@@ -4,10 +4,102 @@
 //
 //  Created by khaled on 3/21/22.
 //
+/*
+ <string-array name="profession_list">
+     "Carpenter",
+     "Plumber",
+     "Air Conditioning",
+     "Electrician",
+     "Painter",
+     "<Mechanic"
+ */
 
 import SwiftUI
 
 struct TechnicianSignUp: View {
+    //         data for choose government and city       
+    
+@State var valueforGav = "Suez"
+@State var valueforCity = "Arbaeen"
+@State var placeholderforGov = "Suez"
+@State var placeholderforCity = "Arbaeen"
+@State var valueforprofession = "Carpenter"
+@State var placeholderforprofession = "Carpenter"
+    
+    
+@State var choosenGovIs = ["Arbaeen","Ganayen","Suez","Attaka","Faisal","Port Suez P-D"]
+var govermentList = ["Cairo", "Suez", "Alexandria","Qalyubia","Giza"]
+var Suez_Cities = ["Arbaeen","Ganayen","Suez","Attaka","Faisal","Port Suez P-D"]
+var Cairo_Cities = ["15 May City","El Darb El Ahmar","Ain Shams","Amreya","Azbakeya","El Basatin","Maadi","El Marg","El Matareya","El Mokattam","New Cairo 1","New Cairo 2","New Cairo 3","El Weili","El Nozha","El Sahel","El Sharabiya","El Shorouk","El Segil","El Salam","El Sayeda Zeinab","El Tebbin","El Zaher","Zamalek","El Zawya El Hamra","Zeitoun","Bab El Sharia","Bulaq","Dar El Salam","Hada`iq El Qobbah","Helwan","Nasr City 1","Nasr City 2","Badr City","Heliopolis","Old Cairo","Manshiyat Naser","Qasr El Nil","Rod El Farag","Shubra","Tura"]
+    var Alexandria_Cities = [     "Port Alexandria Police Dept",
+                                  "Dekhela",
+                                   "Amreya 1",
+                                   "Amreya 2",
+                                   "Ataren",
+                                   "Gomrok",
+                                  "Labban",
+                                  "Mansheya",
+                                   "Montaza 1",
+                                  "Montaza 2",
+                                   "El Raml 1",
+                                 "El Raml 2",
+                                   "North Coast",
+                                 "Bab Sharqi",
+                                  "Borg El Arab",
+                                   "Karmouz",
+                                  "New Borg El Arab",
+                                   "Port al-Basal",
+                                   "Moharam Bek",
+                                  "Sidi Gaber"]
+    var Qalyubia_Cities = ["El Qanater El Khayreya",
+                           "Khanka",
+                           "Khusus",
+                           "El Ubour",
+                           "Banha",
+                           "Banha 1",
+                           "Banha 2",
+                           "Kafr Shukr",
+                           "Qaha",
+                           "Qalyub",
+                           "Shubra El Kheima 1",
+                           "Shubra El Kheima 2",
+                           "Shibin El Qanater",
+                           "Tukh"]
+    var Giza_Cities = ["Dokki",
+                       "Pyramids",
+                       "Agouza",
+                       "El Ayyat",
+                       "El Badrashein",
+                       "El Hawamdeya",
+                       "Giza",
+                       "El Omraniya",
+                       "El Wahat El Bahariya",
+                       "El Warraq",
+                       "Sheikh Zayed City",
+                       "El Saff",
+                       "Atfeh",
+                       "Talbia",
+                       "Ossim",
+                       "Bulaq",
+                       "Imbaba",
+                       "Imbaba",
+                       "Kerdasa",
+                       "6th of October City (1)",
+                       "6th of October City (2)",
+                       "6th of October City (3)"]
+    
+    var profession_list = [  "Carpenter",
+                             "Plumber",
+                             "Air Conditioning",
+                             "Electrician",
+                             "Painter",
+                             "Mechanic"]
+    
+    
+    //                  End of comment
+    
+    
+    
     let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
@@ -16,7 +108,8 @@ struct TechnicianSignUp: View {
         return formatter
     }()
 
-    @State private var birthDate = Date()
+    @State  var birthDate = Date()
+    @State  var biirthDate = ""
     @StateObject var tvm = TechnicianSignUpModel()
     @State private var showAlert = false
     @State  var number1: Bool = true
@@ -29,7 +122,7 @@ struct TechnicianSignUp: View {
     
     var body: some View {
         
-    
+      
         ScrollView {
             
             
@@ -144,20 +237,7 @@ struct TechnicianSignUp: View {
                 })
                 .padding(.top,5)
                 
-                VStack (alignment: .leading  , spacing: 8, content: {
-                    
-                    
-                    Text("City")
-                        .fontWeight(.bold)
-                        .foregroundColor(.gray)
-                    TextField("Naser city", text:$tvm.city)
-                        .font(.system(size: 20, weight: .semibold))
-                        .padding(.top,5)
-                    
-                    
-                    Divider()
-                })
-                .padding(.top,5)
+           
                 
                 VStack (alignment: .leading  , spacing: 8, content: {
                     
@@ -165,22 +245,140 @@ struct TechnicianSignUp: View {
                     Text("Goverment")
                         .fontWeight(.bold)
                         .foregroundColor(.gray)
-                    TextField("Cairo", text:$tvm.governorate)
-                        .font(.system(size: 20, weight: .semibold))
-                        .padding(.top,5)
-Divider()
+                    
+                    
+                    VStack{
+                        Menu {
+                            ForEach(govermentList, id: \.self){ client in
+                                Button(client) {
+                                    self.valueforGav = client
+                                    if(valueforGav == "Cairo"){
+                                        choosenGovIs = Cairo_Cities
+                                        valueforCity = "15 May City"
+                                        placeholderforCity = "15 May City"
+                                    }
+                                    else if(valueforGav == "Suez"){
+                                        choosenGovIs = Suez_Cities
+                                        valueforCity = "Arbaeen"
+                                        placeholderforCity = "Arbaeen"
+                                    }
+                                    else if(valueforGav == "Alexandria"){
+                                        choosenGovIs = Alexandria_Cities
+                                        valueforCity = "Port Alexandria Police Dept"
+                                        placeholderforCity = "Port Alexandria Police Dept"
+                                    }
+                                    else if(valueforGav == "Qalyubia"){
+                                        choosenGovIs = Qalyubia_Cities
+                                        valueforCity = "El Qanater El Khayreya"
+                                        placeholderforCity = "El Qanater El Khayreya"
+                                    }
+                                    else if  (valueforGav == "Giza"){
+                                        choosenGovIs = Giza_Cities
+                                        valueforCity = "Dokki"
+                                        placeholderforCity = "Dokki"
+                                    }
+                                    tvm.governorate = valueforGav
+                                }
+                            }
+                        } label: {
+                            VStack(spacing: 10){
+                                HStack{
+                                    Text(valueforGav.isEmpty ? placeholderforGov : valueforGav)
+                                        .foregroundColor(valueforGav.isEmpty ? .gray : .blue)
+                                    Spacer()
+                                    Image(systemName: "chevron.down")
+                                        .foregroundColor(Color.blue)
+                                        .font(Font.system(size: 20, weight: .bold))
+                                    
+                                }
+                            }
+                        }
+                    }
+                    TextField("\(valueforGav)", text:$tvm.governorate)
+                        .disabled(true)
+                        .hidden()
+                        .frame(width: 0, height: 0)
+                  
+                  
+                    Divider()
                 })
                 .padding(.top,5)
-                
+              
+                VStack (alignment: .leading  , spacing: 8, content: {
+                    
+                    
+                    Text("City")
+                        .fontWeight(.bold)
+                        .foregroundColor(.gray)
+                    VStack{
+                        
+                        Menu {
+                            ForEach(choosenGovIs, id: \.self){ client in
+                                Button(client) {
+                                    self.valueforCity = client
+                     
+                                }
+                            }
+                        } label: {
+                            VStack(spacing: 10){
+                                HStack{
+                                    Text(valueforCity.isEmpty ? placeholderforCity : valueforCity)
+                                        .foregroundColor(valueforCity.isEmpty ? .gray : .blue)
+                                  /*  Text(tvm.city)
+                                        .foregroundColor(.blue)*/
+                                    
+                                    Spacer()
+                                    Image(systemName: "chevron.down")
+                                        .foregroundColor(Color.blue)
+                                        .font(Font.system(size: 20, weight: .bold))
+                                }
+                            }
+                        }
+                    }
+                    
+                    TextField("\(valueforCity)", text:$tvm.city)
+                        .disabled(true)
+                        .hidden()
+                        .frame(width: 0, height: 0)
+                    
+                    Divider()
+                })
+                .padding(.top,5)
                 VStack (alignment: .leading  , spacing: 8, content: {
                     
                     
                     Text("Profession")
                         .fontWeight(.bold)
                         .foregroundColor(.gray)
-                    TextField("Electrician", text:$tvm.profession)
-                        .font(.system(size: 20, weight: .semibold))
-                        .padding(.top,5)
+                    VStack{
+                        
+                        Menu {
+                            ForEach(profession_list, id: \.self){ client in
+                                Button(client) {
+                                    self.valueforprofession = client
+                     
+                                }
+                            }
+                        } label: {
+                            VStack(spacing: 10){
+                                HStack{
+                                    Text(valueforprofession.isEmpty ? placeholderforCity : valueforprofession)
+                                        .foregroundColor(valueforprofession.isEmpty ? .gray : .blue)
+                          
+                                    
+                                    Spacer()
+                                    Image(systemName: "chevron.down")
+                                        .foregroundColor(Color.blue)
+                                        .font(Font.system(size: 20, weight: .bold))
+                                }
+                            }
+                        }
+                    }
+
+                    TextField("\(valueforprofession)", text:$tvm.profession)
+                        .disabled(true)
+                        .hidden()
+                        .frame(width: 0, height: 0)
                     
                     
                     Divider()
@@ -190,7 +388,7 @@ Divider()
                 VStack (alignment: .leading  , spacing: 8) {
                     
                    
-                        DatePicker(selection: $birthDate,  in: ...Date(),displayedComponents: .date)
+                    DatePicker(selection: $birthDate,  in: Date()...,displayedComponents: .date)
                             
                             
                         {
@@ -199,12 +397,13 @@ Divider()
                                 .fontWeight(.bold)
                         }
 
-                    var  biirthDate = Date().formatDate(name: birthDate)
-                    
+                    var  biiirthDate = Date().formatDate(name: birthDate)
+                 //   print(tvm.age)
+
                 
-                    TextField("\(biirthDate)", text:$tvm.age)
+                    TextField("\(biiirthDate)", text:$tvm.age)
                         
-                        .foregroundColor(.green)
+                   
                         .disabled(true)
                         .hidden()
                         .frame(width: 0, height: 0)
@@ -257,7 +456,7 @@ Divider()
                         Text("Password")
                             .fontWeight(.bold)
                             .foregroundColor(.gray)
-                        SecureField("1268686@kjhjfhvHo6", text:$tvm.password)
+                        SecureField("************", text:$tvm.password)
                             .font(.system(size: 20, weight: .semibold))
                             .padding(.top,5)
                         
@@ -282,7 +481,7 @@ Divider()
                         Text("Confirm Password")
                             .fontWeight(.bold)
                             .foregroundColor(.gray)
-                        SecureField("1268686@kjhjfhvHo6", text:$tvm.confirmpassword)
+                        SecureField("************", text:$tvm.confirmpassword)
                             .font(.system(size: 20, weight: .semibold))
                             
                             .padding(.top,5)
@@ -307,8 +506,9 @@ Divider()
                     .padding(.top, 10)
                     // button for moveing to next step
                     Button(action: {
-                        Validate(usser: tvm)
-                      
+                        biirthDate = Date().formatDate(name: birthDate)
+                      Validate(usser: tvm)
+                        
                         
                     }, label: {
                         Image(systemName: "arrow.right")
@@ -389,7 +589,7 @@ Divider()
             
             
         }
-        if (usser.password != usser.confirmpassword) {
+        if (usser.password != usser.confirmpassword || usser.confirmpassword.isEmpty) {
             number7 = false
             valid = false
         }
@@ -486,14 +686,10 @@ struct TechnicianSignUp_Previews: PreviewProvider {
     static var previews: some View {
         
         TechnicianSignUp()
+            .preferredColorScheme(.light)
     }
 }
-extension Date {
-    func formatDate(name:Date) -> String {
-                let dateFormatter = DateFormatter()
-          
-            dateFormatter.dateFormat = "yyyy-MM-dd"
-        
-            return dateFormatter.string(from: name)
-        }
-}
+
+
+
+

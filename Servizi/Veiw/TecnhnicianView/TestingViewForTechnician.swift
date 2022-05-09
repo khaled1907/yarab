@@ -127,7 +127,7 @@ struct TestingViewForTechnician: View {
    
         .frame(width: gentRect().width, height:gentRect().height )
     
-  // }te.frame(width: gentRect().width, height:gentRect().height )
+
 
     
       
@@ -142,3 +142,4 @@ struct TestingViewForTechnician_Previews: PreviewProvider {
         TestingViewForTechnician()
     }
 }
+

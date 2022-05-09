@@ -8,38 +8,88 @@
 
 /* Begin PBXBuildFile section */
 		290F6F3B27CFBE6F00711AB8 /* testingVeiw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290F6F3A27CFBE6F00711AB8 /* testingVeiw.swift */; };
+		29205D90280CEAE9001F492F /* SwiftUIViewAPIContoler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29205D8F280CEAE8001F492F /* SwiftUIViewAPIContoler.swift */; };
+		29220DD9282498F9009CDB9B /* TechProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29220DD8282498F9009CDB9B /* TechProfileViewModel.swift */; };
 		292B001B27CD94D4000DC6C8 /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B001A27CD94D4000DC6C8 /* login.swift */; };
 		292B001D27CD94EE000DC6C8 /* signUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B001C27CD94EE000DC6C8 /* signUp.swift */; };
-		2953459727EE2A9A00303888 /* dataPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2953459627EE2A9A00303888 /* dataPicker.swift */; };
+		29313CA8280D8291002663B5 /* viewToMakeAppoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29313CA7280D8291002663B5 /* viewToMakeAppoint.swift */; };
+		295BB3AB281C270000B1CCD2 /* TechnicainProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295BB3AA281C26FF00B1CCD2 /* TechnicainProfile.swift */; };
+		295BB3AF281C83D700B1CCD2 /* ordersForTechnicain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295BB3AE281C83D600B1CCD2 /* ordersForTechnicain.swift */; };
+		295BB3B1281C846800B1CCD2 /* ListOrdersForTechnicain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295BB3B0281C846800B1CCD2 /* ListOrdersForTechnicain.swift */; };
 		2988F07827E9091100C92FB1 /* TechnicianSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2988F07727E9091100C92FB1 /* TechnicianSignUp.swift */; };
 		2988F07A27E9111100C92FB1 /* TechnicainLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2988F07927E9111100C92FB1 /* TechnicainLogin.swift */; };
 		2988F07C27E911B200C92FB1 /* TestingViewForTechnician.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2988F07B27E911B200C92FB1 /* TestingViewForTechnician.swift */; };
 		2988F07E27EA347500C92FB1 /* UserSignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2988F07D27EA347400C92FB1 /* UserSignUpViewModel.swift */; };
 		2988F08027EA701C00C92FB1 /* TechnicianSignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2988F07F27EA701C00C92FB1 /* TechnicianSignUpModel.swift */; };
 		2990107327EBB28200DAB8C2 /* TechnicainHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2990107227EBB28100DAB8C2 /* TechnicainHomeView.swift */; };
+		2998895B2828828100B1183D /* TechAppointmwntsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2998895A2828828100B1183D /* TechAppointmwntsVM.swift */; };
+		2998895D282888AE00B1183D /* sheetView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2998895C282888AE00B1183D /* sheetView2.swift */; };
+		29A26F39282173220086C500 /* ReatingVeiw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A26F38282173220086C500 /* ReatingVeiw.swift */; };
+		29A3C78D280E07390038949B /* Orderss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A3C78C280E07390038949B /* Orderss.swift */; };
+		29A3C78F280E1DA60038949B /* toGetAppointmentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A3C78E280E1DA60038949B /* toGetAppointmentData.swift */; };
+		29A3C791280E1FBA0038949B /* nononono.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A3C790280E1FBA0038949B /* nononono.swift */; };
+		29A6CD5E282337F300318C3D /* Loading_to_get_avialbileTec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A6CD5D282337F300318C3D /* Loading_to_get_avialbileTec.swift */; };
+		29A6CD60282337FA00318C3D /* View_to_appear_available_ tecc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A6CD5F282337FA00318C3D /* View_to_appear_available_ tecc.swift */; };
+		29A6CD6228233BA100318C3D /*  UserHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A6CD6128233BA100318C3D /*  UserHomeViewModel.swift */; };
+		29A6CD652824551300318C3D /* loadingforAppointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A6CD642824550500318C3D /* loadingforAppointment.swift */; };
+		29A6CD692824559300318C3D /* ViewToAppearApointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A6CD682824559300318C3D /* ViewToAppearApointment.swift */; };
 		29A814C927CD30FC00701405 /* ServiziApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A814C827CD30FB00701405 /* ServiziApp.swift */; };
 		29A814CD27CD312B00701405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29A814CC27CD312B00701405 /* Assets.xcassets */; };
 		29A814D027CD312B00701405 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29A814CF27CD312B00701405 /* Preview Assets.xcassets */; };
 		29A814DC27CD34B700701405 /* FirstPageInApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A814DB27CD34B700701405 /* FirstPageInApp.swift */; };
+		29B01B782829312600B52BA2 /* SettingTechnicain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B01B772829312600B52BA2 /* SettingTechnicain.swift */; };
+		29B01B7A2829395A00B52BA2 /* EditingTechnicainProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B01B792829395A00B52BA2 /* EditingTechnicainProfile.swift */; };
+		29B01B7C28297B9B00B52BA2 /* LoadingAPPTechnician.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B01B7B28297B9500B52BA2 /* LoadingAPPTechnician.swift */; };
+		29B01B7E28297C2100B52BA2 /* viewToAppearAppTechnechion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B01B7D28297C2100B52BA2 /* viewToAppearAppTechnechion.swift */; };
+		29B01B822829836100B52BA2 /* loadingTecPROFILE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B01B812829836100B52BA2 /* loadingTecPROFILE.swift */; };
+		29C83B0428189F9000F8A3EC /* sheetview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C83B0328189F9000F8A3EC /* sheetview.swift */; };
+		29D452CC2821DA9700B4F681 /* postReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D452CB2821DA9100B4F681 /* postReview.swift */; };
+		29D452D02822AA5E00B4F681 /* SettingUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D452CF2822AA5E00B4F681 /* SettingUser.swift */; };
+		29E817CB28298B650083B59F /* view to appear profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E817CA28298B650083B59F /* view to appear profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		290F6F3A27CFBE6F00711AB8 /* testingVeiw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testingVeiw.swift; sourceTree = "<group>"; };
+		29205D8F280CEAE8001F492F /* SwiftUIViewAPIContoler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIViewAPIContoler.swift; sourceTree = "<group>"; };
+		29220DD8282498F9009CDB9B /* TechProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechProfileViewModel.swift; sourceTree = "<group>"; };
 		292B001A27CD94D4000DC6C8 /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
 		292B001C27CD94EE000DC6C8 /* signUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUp.swift; sourceTree = "<group>"; };
-		2953459627EE2A9A00303888 /* dataPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataPicker.swift; sourceTree = "<group>"; };
+		29313CA7280D8291002663B5 /* viewToMakeAppoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewToMakeAppoint.swift; sourceTree = "<group>"; };
+		295BB3AA281C26FF00B1CCD2 /* TechnicainProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicainProfile.swift; sourceTree = "<group>"; };
+		295BB3AE281C83D600B1CCD2 /* ordersForTechnicain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ordersForTechnicain.swift; sourceTree = "<group>"; };
+		295BB3B0281C846800B1CCD2 /* ListOrdersForTechnicain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersForTechnicain.swift; sourceTree = "<group>"; };
 		2988F07727E9091100C92FB1 /* TechnicianSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicianSignUp.swift; sourceTree = "<group>"; };
 		2988F07927E9111100C92FB1 /* TechnicainLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicainLogin.swift; sourceTree = "<group>"; };
 		2988F07B27E911B200C92FB1 /* TestingViewForTechnician.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingViewForTechnician.swift; sourceTree = "<group>"; };
 		2988F07D27EA347400C92FB1 /* UserSignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignUpViewModel.swift; sourceTree = "<group>"; };
 		2988F07F27EA701C00C92FB1 /* TechnicianSignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicianSignUpModel.swift; sourceTree = "<group>"; };
 		2990107227EBB28100DAB8C2 /* TechnicainHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicainHomeView.swift; sourceTree = "<group>"; };
+		2998895A2828828100B1183D /* TechAppointmwntsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechAppointmwntsVM.swift; sourceTree = "<group>"; };
+		2998895C282888AE00B1183D /* sheetView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sheetView2.swift; sourceTree = "<group>"; };
+		29A26F38282173220086C500 /* ReatingVeiw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReatingVeiw.swift; sourceTree = "<group>"; };
+		29A3C78C280E07390038949B /* Orderss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orderss.swift; sourceTree = "<group>"; };
+		29A3C78E280E1DA60038949B /* toGetAppointmentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toGetAppointmentData.swift; sourceTree = "<group>"; };
+		29A3C790280E1FBA0038949B /* nononono.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nononono.swift; sourceTree = "<group>"; };
+		29A6CD5D282337F300318C3D /* Loading_to_get_avialbileTec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loading_to_get_avialbileTec.swift; sourceTree = "<group>"; };
+		29A6CD5F282337FA00318C3D /* View_to_appear_available_ tecc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View_to_appear_available_ tecc.swift"; sourceTree = "<group>"; };
+		29A6CD6128233BA100318C3D /*  UserHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " UserHomeViewModel.swift"; sourceTree = "<group>"; };
+		29A6CD642824550500318C3D /* loadingforAppointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loadingforAppointment.swift; sourceTree = "<group>"; };
+		29A6CD682824559300318C3D /* ViewToAppearApointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewToAppearApointment.swift; sourceTree = "<group>"; };
 		29A814C527CD30FA00701405 /* Servizi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Servizi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A814C827CD30FB00701405 /* ServiziApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiziApp.swift; sourceTree = "<group>"; };
 		29A814CC27CD312B00701405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29A814CF27CD312B00701405 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		29A814D127CD312B00701405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29A814DB27CD34B700701405 /* FirstPageInApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageInApp.swift; sourceTree = "<group>"; };
+		29B01B772829312600B52BA2 /* SettingTechnicain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTechnicain.swift; sourceTree = "<group>"; };
+		29B01B792829395A00B52BA2 /* EditingTechnicainProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingTechnicainProfile.swift; sourceTree = "<group>"; };
+		29B01B7B28297B9500B52BA2 /* LoadingAPPTechnician.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingAPPTechnician.swift; sourceTree = "<group>"; };
+		29B01B7D28297C2100B52BA2 /* viewToAppearAppTechnechion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewToAppearAppTechnechion.swift; sourceTree = "<group>"; };
+		29B01B812829836100B52BA2 /* loadingTecPROFILE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loadingTecPROFILE.swift; sourceTree = "<group>"; };
+		29C83B0328189F9000F8A3EC /* sheetview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sheetview.swift; sourceTree = "<group>"; };
+		29D452CB2821DA9100B4F681 /* postReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postReview.swift; sourceTree = "<group>"; };
+		29D452CF2822AA5E00B4F681 /* SettingUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingUser.swift; sourceTree = "<group>"; };
+		29E817CA28298B650083B59F /* view to appear profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "view to appear profile.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,17 +106,42 @@
 		290F6F3927CFBE3A00711AB8 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				290F6F3A27CFBE6F00711AB8 /* testingVeiw.swift */,
 				292B001C27CD94EE000DC6C8 /* signUp.swift */,
 				292B001A27CD94D4000DC6C8 /* login.swift */,
+				290F6F3A27CFBE6F00711AB8 /* testingVeiw.swift */,
+				2990107227EBB28100DAB8C2 /* TechnicainHomeView.swift */,
+				29313CA7280D8291002663B5 /* viewToMakeAppoint.swift */,
+				29D452CF2822AA5E00B4F681 /* SettingUser.swift */,
+				29C83B0328189F9000F8A3EC /* sheetview.swift */,
+				29A26F38282173220086C500 /* ReatingVeiw.swift */,
 			);
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		295C3E82282995A80088A9BD /* Tec_Settings */ = {
+			isa = PBXGroup;
+			children = (
+				29B01B772829312600B52BA2 /* SettingTechnicain.swift */,
+				29B01B792829395A00B52BA2 /* EditingTechnicainProfile.swift */,
+			);
+			path = Tec_Settings;
+			sourceTree = "<group>";
+		};
+		2961C2D22822EE630071B6F7 /*  to_ get_user_available_tec */ = {
+			isa = PBXGroup;
+			children = (
+				29205D8F280CEAE8001F492F /* SwiftUIViewAPIContoler.swift */,
+				29A6CD5D282337F300318C3D /* Loading_to_get_avialbileTec.swift */,
+				29A6CD6128233BA100318C3D /*  UserHomeViewModel.swift */,
+				29A6CD5F282337FA00318C3D /* View_to_appear_available_ tecc.swift */,
+			);
+			path = " to_ get_user_available_tec";
 			sourceTree = "<group>";
 		};
 		2988F03D27E8AA6700C92FB1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				29A814DB27CD34B700701405 /* FirstPageInApp.swift */,
+				29D452CB2821DA9100B4F681 /* postReview.swift */,
 				2988F07D27EA347400C92FB1 /* UserSignUpViewModel.swift */,
 				2988F07F27EA701C00C92FB1 /* TechnicianSignUpModel.swift */,
 			);
@@ -79,10 +154,36 @@
 				2988F07727E9091100C92FB1 /* TechnicianSignUp.swift */,
 				2988F07927E9111100C92FB1 /* TechnicainLogin.swift */,
 				2988F07B27E911B200C92FB1 /* TestingViewForTechnician.swift */,
-				2990107227EBB28100DAB8C2 /* TechnicainHomeView.swift */,
-				2953459627EE2A9A00303888 /* dataPicker.swift */,
+				295C3E82282995A80088A9BD /* Tec_Settings */,
+				29B01B802829831D00B52BA2 /*   to_ get_tec _prf0ile */,
+				29988959282881FC00B1183D /*  to_ get_tec _orders */,
 			);
 			path = TecnhnicianView;
+			sourceTree = "<group>";
+		};
+		29988959282881FC00B1183D /*  to_ get_tec _orders */ = {
+			isa = PBXGroup;
+			children = (
+				295BB3AE281C83D600B1CCD2 /* ordersForTechnicain.swift */,
+				295BB3B0281C846800B1CCD2 /* ListOrdersForTechnicain.swift */,
+				29B01B7B28297B9500B52BA2 /* LoadingAPPTechnician.swift */,
+				2998895A2828828100B1183D /* TechAppointmwntsVM.swift */,
+				29B01B7D28297C2100B52BA2 /* viewToAppearAppTechnechion.swift */,
+				2998895C282888AE00B1183D /* sheetView2.swift */,
+			);
+			path = " to_ get_tec _orders";
+			sourceTree = "<group>";
+		};
+		29A6CD63282454AA00318C3D /*  to_ get_user_orders */ = {
+			isa = PBXGroup;
+			children = (
+				29A3C78C280E07390038949B /* Orderss.swift */,
+				29A3C790280E1FBA0038949B /* nononono.swift */,
+				29A6CD642824550500318C3D /* loadingforAppointment.swift */,
+				29A3C78E280E1DA60038949B /* toGetAppointmentData.swift */,
+				29A6CD682824559300318C3D /* ViewToAppearApointment.swift */,
+			);
+			path = " to_ get_user_orders";
 			sourceTree = "<group>";
 		};
 		29A814BC27CD30F900701405 = {
@@ -104,8 +205,9 @@
 		29A814C727CD30FA00701405 /* Servizi */ = {
 			isa = PBXGroup;
 			children = (
-				2988F03D27E8AA6700C92FB1 /* ViewModel */,
 				29A814C827CD30FB00701405 /* ServiziApp.swift */,
+				29A814DB27CD34B700701405 /* FirstPageInApp.swift */,
+				2988F03D27E8AA6700C92FB1 /* ViewModel */,
 				29A814D827CD327D00701405 /* Veiw */,
 				29A814CC27CD312B00701405 /* Assets.xcassets */,
 				29A814CF27CD312B00701405 /* Preview Assets.xcassets */,
@@ -134,9 +236,22 @@
 		29A814DE27CD4C6400701405 /* UserView */ = {
 			isa = PBXGroup;
 			children = (
+				2961C2D22822EE630071B6F7 /*  to_ get_user_available_tec */,
+				29A6CD63282454AA00318C3D /*  to_ get_user_orders */,
 				290F6F3927CFBE3A00711AB8 /* New Group */,
 			);
 			path = UserView;
+			sourceTree = "<group>";
+		};
+		29B01B802829831D00B52BA2 /*   to_ get_tec _prf0ile */ = {
+			isa = PBXGroup;
+			children = (
+				29220DD8282498F9009CDB9B /* TechProfileViewModel.swift */,
+				29B01B812829836100B52BA2 /* loadingTecPROFILE.swift */,
+				295BB3AA281C26FF00B1CCD2 /* TechnicainProfile.swift */,
+				29E817CA28298B650083B59F /* view to appear profile.swift */,
+			);
+			path = "  to_ get_tec _prf0ile";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +270,8 @@
 			dependencies = (
 			);
 			name = Servizi;
+			packageProductDependencies = (
+			);
 			productName = Servizi;
 			productReference = 29A814C527CD30FA00701405 /* Servizi.app */;
 			productType = "com.apple.product-type.application";
@@ -182,6 +299,8 @@
 				Base,
 			);
 			mainGroup = 29A814BC27CD30F900701405;
+			packageReferences = (
+			);
 			productRefGroup = 29A814C627CD30FA00701405 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -208,18 +327,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29A26F39282173220086C500 /* ReatingVeiw.swift in Sources */,
+				295BB3B1281C846800B1CCD2 /* ListOrdersForTechnicain.swift in Sources */,
+				29A6CD5E282337F300318C3D /* Loading_to_get_avialbileTec.swift in Sources */,
+				29B01B7A2829395A00B52BA2 /* EditingTechnicainProfile.swift in Sources */,
 				2988F07E27EA347500C92FB1 /* UserSignUpViewModel.swift in Sources */,
+				29C83B0428189F9000F8A3EC /* sheetview.swift in Sources */,
+				295BB3AB281C270000B1CCD2 /* TechnicainProfile.swift in Sources */,
+				29B01B782829312600B52BA2 /* SettingTechnicain.swift in Sources */,
+				29A3C78F280E1DA60038949B /* toGetAppointmentData.swift in Sources */,
+				29A3C791280E1FBA0038949B /* nononono.swift in Sources */,
+				29B01B7C28297B9B00B52BA2 /* LoadingAPPTechnician.swift in Sources */,
+				2998895B2828828100B1183D /* TechAppointmwntsVM.swift in Sources */,
 				2988F08027EA701C00C92FB1 /* TechnicianSignUpModel.swift in Sources */,
 				292B001D27CD94EE000DC6C8 /* signUp.swift in Sources */,
-				2953459727EE2A9A00303888 /* dataPicker.swift in Sources */,
+				29A3C78D280E07390038949B /* Orderss.swift in Sources */,
 				29A814DC27CD34B700701405 /* FirstPageInApp.swift in Sources */,
 				2990107327EBB28200DAB8C2 /* TechnicainHomeView.swift in Sources */,
+				29A6CD6228233BA100318C3D /*  UserHomeViewModel.swift in Sources */,
+				29D452D02822AA5E00B4F681 /* SettingUser.swift in Sources */,
 				2988F07A27E9111100C92FB1 /* TechnicainLogin.swift in Sources */,
+				29A6CD652824551300318C3D /* loadingforAppointment.swift in Sources */,
+				29E817CB28298B650083B59F /* view to appear profile.swift in Sources */,
+				2998895D282888AE00B1183D /* sheetView2.swift in Sources */,
 				29A814C927CD30FC00701405 /* ServiziApp.swift in Sources */,
+				29205D90280CEAE9001F492F /* SwiftUIViewAPIContoler.swift in Sources */,
 				290F6F3B27CFBE6F00711AB8 /* testingVeiw.swift in Sources */,
+				29B01B822829836100B52BA2 /* loadingTecPROFILE.swift in Sources */,
+				29A6CD692824559300318C3D /* ViewToAppearApointment.swift in Sources */,
 				292B001B27CD94D4000DC6C8 /* login.swift in Sources */,
+				295BB3AF281C83D700B1CCD2 /* ordersForTechnicain.swift in Sources */,
+				29313CA8280D8291002663B5 /* viewToMakeAppoint.swift in Sources */,
+				29220DD9282498F9009CDB9B /* TechProfileViewModel.swift in Sources */,
+				29A6CD60282337FA00318C3D /* View_to_appear_available_ tecc.swift in Sources */,
 				2988F07827E9091100C92FB1 /* TechnicianSignUp.swift in Sources */,
 				2988F07C27E911B200C92FB1 /* TestingViewForTechnician.swift in Sources */,
+				29D452CC2821DA9700B4F681 /* postReview.swift in Sources */,
+				29B01B7E28297C2100B52BA2 /* viewToAppearAppTechnechion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

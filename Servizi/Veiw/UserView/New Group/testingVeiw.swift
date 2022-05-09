@@ -17,14 +17,14 @@ struct testingVeiw: View
     @Namespace var name
     var body: some View
     {
- 
+        NavigationView{
     VStack( spacing:25){
 
             HStack{
                         Image("number2")
                             .resizable()
                             .scaledToFill()
-                           // .scaledToFit()
+                           
                     }
                     .frame(width:gentRect().width )
             .frame(height:  gentRect().height / 4.9)
@@ -127,9 +127,10 @@ struct testingVeiw: View
    
         .frame(width: gentRect().width, height:gentRect().height )
     
-  // }te.frame(width: gentRect().width, height:gentRect().height )
-
-    
+  
+    .navigationBarHidden(true)
+        }.navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
       
                
            

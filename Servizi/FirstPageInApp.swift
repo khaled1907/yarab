@@ -4,7 +4,6 @@
 //
 //  Created by khaled on 2/28/22.
 //
-
 import SwiftUI
 
 struct FirstPageInApp: View {
@@ -66,10 +65,8 @@ NavigationView{
   }
             
         
-        NavigationLink( destination: login(),
-          isActive: self.$isActive2)
-        {
-          Text("")
+        ZStack{
+            Text("")
         }
             
        .frame( height: geeetRect().height / 3)
@@ -92,7 +89,7 @@ NavigationView{
  .frame(height: geeetRect().height )
        
   
-}
+}   
 
 .frame(height: geeetRect().height - geeetRect().height / 25)
 .frame(width: geeetRect().width)
@@ -123,4 +120,5 @@ extension View{
     }
     
 }
+
 

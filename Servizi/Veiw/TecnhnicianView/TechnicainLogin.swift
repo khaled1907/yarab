@@ -8,17 +8,15 @@
 import SwiftUI
 
 struct TechnicainLogin: View {
- 
-    @State var email = ""
+    @State  var number1: Bool = true
+    @State  var number2: Bool = true
+    @State var phone = ""
     @State var password = ""
     var body: some View {
       
             ScrollView{
         VStack{
-            
-          
             Text("Login in your account ")
-                
                 .font(.title)
                 .fontWeight(.bold)
               //  .foregroundColor(.black)
@@ -28,40 +26,60 @@ struct TechnicainLogin: View {
             
             // username _ password
             VStack (alignment: .leading  , spacing: 8, content: {
-             
                         
-               Text("User name")
+                        
+               Text("Phone Number")
                 .fontWeight(.bold)
            .foregroundColor(.gray)
-               
-                TextField("servizi22@yahoo.com", text:$email)
+                TextField("01111111111", text:$phone)
                     .font(.system(size: 20, weight: .semibold))
-                    
-                    
+           
                     .padding(.top,5)
                 
                 
                 Divider()
+                if number1 == false
+                {
+                    Text("phone is not valid")
+                        .foregroundColor(.red)
+                    
+                }
+                else
+                {
+                    Text("")
+                    
+                }
             })
             .padding(.top,25)
- 
             // v stack for PASSWORD
+            Spacer()
             VStack (alignment: .leading  , spacing: 8, content: {
                         
                         
                Text("Password")
                 .fontWeight(.bold)
                 .foregroundColor(.gray)
-               SecureField("123456@Servizi", text:$password)
+               SecureField("**********", text:$password)
                 .font(.system(size: 20, weight: .semibold))
               //  .foregroundColor(Color(.black))
-                .padding(.top,5)
+                .padding(.top,10)
            
                 Divider()
+                if number2 == false
+                {
+                    Text("password length must be more than 7")
+                        .foregroundColor(.red)
+
+                }
+                else
+                {
+                    Text("")
+                    
+                }
             })
-            .padding(.top,20)
+        
             
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+            Button(action: { }, label: {
                 Text("Forgrt Password")
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     .foregroundColor(.gray)
@@ -71,7 +89,7 @@ struct TechnicainLogin: View {
             .frame(maxWidth: .infinity, alignment: .trailing)
             .padding(.top, 10)
             // button for moveing to next step
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+            Button(action: {Validate(phone: phone, password: password)}, label: {
               Image(systemName: "arrow.right")
                 .font(.system(size: 24, weight:.bold))
                 .foregroundColor(.white)
@@ -94,6 +112,55 @@ struct TechnicainLogin: View {
    
     
 }
+    func Validate( phone : String , password : String) -> Bool
+    {
+            var valid = true
+
+
+        if (!phoneValidator(phone: phone)) {
+        number1 = false
+        valid = false
+        }
+        else{
+        number1 = true
+  
+
+        }
+        
+        if (!passwordValidation(password: password)) {
+        number2 = false
+        valid = false
+        }
+        else{
+        number2 = true
+  
+
+        }
+
+return valid
+}
+    
+    func phoneValidator(phone: String)-> Bool {
+     if (phone.isEmpty || phone.count != 11) {
+              return false
+         } else {
+             let PHONE_REGEX =  #"^\(?\d{3}\)?[ -]?\d{3}[ -]?\d{5}$"#
+             let phoneTest = NSPredicate(format: "SELF MATCHES %@", PHONE_REGEX)
+             return phoneTest.evaluate(with : phone)
+         }
+     }
+ //******************************Validate foe psssword *********************************
+     
+     func passwordValidation(password: String)-> Bool {
+         if (password.isEmpty || password.count < 8)
+         {
+             return false
+         }
+         else {
+             return true
+             
+         }
+     }
 }
 
 struct TechnicainLogin_Previews: PreviewProvider {

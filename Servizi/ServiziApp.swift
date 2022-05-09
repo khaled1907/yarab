@@ -13,9 +13,13 @@ struct ServiziApp: App {
     var body: some Scene {
         
         WindowGroup {
-  FirstPageInApp()
-        //    TechnicainHomeView()
-            
+ // FirstPageInApp()
+         // viewToMakeAppoint()
+       //   nononono()
+       //  Orderss()
+    //        TechnicainProfile_()
+            viewToMakeAppoint()
+          //  viewToMakeAppoint()
         }
     }
 }
