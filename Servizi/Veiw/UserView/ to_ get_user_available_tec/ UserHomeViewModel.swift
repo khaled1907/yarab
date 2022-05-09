@@ -61,7 +61,7 @@ struct Ttechnician: Codable , Identifiable,Hashable{
                 }
                 
                 
-            }
+            }///
         
         }.resume()
   
