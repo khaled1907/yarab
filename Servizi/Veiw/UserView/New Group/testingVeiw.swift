@@ -9,6 +9,8 @@ import SwiftUI
 
 struct testingVeiw: View
 {
+    
+    @State private var isback: Bool = false
     @State private var isActive: Bool = false
     @State private var isActive1: Bool = false
     @State var MaxCircleHight : CGFloat = 0
@@ -18,16 +20,33 @@ struct testingVeiw: View
     var body: some View
     {
         NavigationView{
+            ZStack{
     VStack( spacing:25){
+      
 
-            HStack{
-                        Image("number2")
-                            .resizable()
-                            .scaledToFill()
-                           
+            VStack{
+                HStack{
+                    Image(systemName: "arrow.left")
+                        .resizable()
+                        .frame(width: gentRect().width / 12, height: gentRect().width / 15)
+                    Spacer()
+                }.padding(.leading)
+                .onTapGesture {
+                    withAnimation(.spring()){
+            
+                    self.isback.toggle()
+                        
                     }
-                    .frame(width:gentRect().width )
+                    
+                }
+                Spacer()
+                           
+            }    .frame(width:gentRect().width )
             .frame(height:  gentRect().height / 4.9)
+            .background(Image("number2")
+                            .resizable()
+                            .scaledToFill())
+                 
 
 
   
@@ -46,7 +65,7 @@ struct testingVeiw: View
                         
                         Text("Login")
                             .font(.system(size: 20))
-                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            .fontWeight(.bold)
                             .foregroundColor(index == 0 ? .blue : .gray)
                         ZStack{
                             Capsule()
@@ -77,7 +96,7 @@ struct testingVeiw: View
                         
                         Text("Sing Up")
                             .font(.system(size: 20))
-                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            .fontWeight(.bold)
                             .foregroundColor(index == 1 ? .blue : .gray)
                         ZStack{
                             Capsule()
@@ -121,23 +140,33 @@ struct testingVeiw: View
             
             
    
-          
-       
+    
         }
    
-        .frame(width: gentRect().width, height:gentRect().height )
-    
-  
+    .frame(width: gentRect().width)
+                
+                if isback{
+                    FirstPageInApp()
+                        .transition(.slide)
+                }
+                
+                
+            }
     .navigationBarHidden(true)
-        }.navigationBarHidden(true)
+  
+        }
+        .navigationBarHidden(true)
+       
+    
         .navigationBarBackButtonHidden(true)
-      
-               
+       
+    
+    }
            
  
 }
     
-}
+
 struct testingVeiw_Previews: PreviewProvider {
     static var previews: some View {
         testingVeiw()

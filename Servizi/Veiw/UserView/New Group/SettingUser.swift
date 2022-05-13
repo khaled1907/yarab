@@ -8,7 +8,7 @@
  import SwiftUI
                             
 struct SettingUser: View
-{
+{    @StateObject var Viewmodel = TechProfileViewModel()
     @State var showbo = false
     @State var isActive10:Bool = false
     @State var isActive11:Bool = false
@@ -236,6 +236,7 @@ struct SettingUser: View
                     }.background(Color.black.opacity(0.5).edgesIgnoringSafeArea(.all))
                     
                 }
+           
             }
         }.navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
@@ -476,7 +477,7 @@ VStack{
 .padding(.bottom,     gentRect().height / 30)
 }.background(Color(UIColor(named: "bColor")!))
 
-
+   
 
 }
 .frame(width:gentRect().width - gentRect().width / 3.6)

@@ -276,11 +276,9 @@ struct TechnicainHomeView: View {
        
     
    } .navigationBarHidden(true)
-   
-     
-  
-     .navigationBarBackButtonHidden(true)
-        
+ .navigationBarBackButtonHidden(true)
+   .ignoresSafeArea(.container, edges: [.top, .horizontal])
+ 
 }
     
 }

@@ -100,11 +100,11 @@ struct login: View {
             Button(action: {
                     
                     
-                if (Validate(phone: phone, password: password))
-                    {
+            //    if (Validate(phone: phone, password: password))
+                 //   {
                        self.isActive1 = true
                       
-                    }
+                 //   }
                 
                 
                 

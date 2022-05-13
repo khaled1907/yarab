@@ -36,7 +36,7 @@ struct viewToMakeAppoint: View {
             VStack{
                 HStack{
                     VStack{
-                        Text ("put here")
+                        Text ("carpenter")
                             .foregroundColor(.white)
                             .frame(width: gentRect().width / 4 , alignment: .leading)
                             .font(.title2)
@@ -44,10 +44,10 @@ struct viewToMakeAppoint: View {
                     .frame(width : gentRect().width / 2 )
                     
                     VStack{
-                        Text("city")
+                        Text("Naser City1")
                             .foregroundColor(.white)
                             .frame(width: gentRect().width / 4)
-                            .font(.title)
+                            .font(.title3)
                         
                     }
                     .frame(width : gentRect().width / 2 )
